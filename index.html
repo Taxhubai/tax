@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #3498db; /* Background color changed to a blue color */
+            background-color: #272727; /* Dark background color */
             margin: 0;
             padding: 0;
             display: flex;
@@ -17,32 +17,19 @@
             height: 100vh;
         }
         h1 {
-            font-size: 48px;
-            color: #ecf0f1; /* Text color changed to a light gray color */
+            font-size: 36px;
+            color: #fff; /* White text color */
+            margin-bottom: 20px; /* Add some spacing below the title */
         }
-        input[type="file"] {
-            padding: 10px;
-            margin-top: 20px;
-        }
-        /* Button style */
-        button {
-            padding: 10px 20px;
-            background-color: #e74c3c; /* Button color changed to a red color */
-            border: none;
-            color: #fff; /* Button text color changed to white */
-            cursor: pointer;
-        }
-        /* Button hover effect */
-        button:hover {
-            background-color: #c0392b; /* Darker red on hover */
+        h2 {
+            font-size: 24px;
+            color: #3498db; /* Blue text color */
+            margin-bottom: 30px; /* Add spacing below the subheader */
         }
     </style>
 </head>
 <body>
     <h1>TaxHub</h1>
-    <form enctype="multipart/form-data" action="/upload" method="POST">
-        <input type="file" name="file" id="fileInput">
-        <button type="submit">Upload</button>
-    </form>
+    <h2>Tax Intelligence Portal</h2>
 </body>
 </html>
