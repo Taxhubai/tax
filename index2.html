@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaxHub</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000; /* Black background color */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+        .logo {
+            font-size: 48px;
+            color: #00c7ff; /* Cyan text color */
+            margin-top: 20px;
+            text-shadow: 0 0 10px rgba(0, 199, 255, 0.8); /* Text shadow for a futuristic effect */
+        }
+        .tagline {
+            font-size: 24px;
+            color: #ffcd00; /* Yellow text color */
+            margin-top: 10px;
+            text-shadow: 0 0 10px rgba(255, 205, 0, 0.8); /* Text shadow for a futuristic effect */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            max-width: 800px;
+            margin-top: 40px; /* Increased margin for more space */
+        }
+        .option {
+            background-color: #141414; /* Dark gray option background color */
+            padding: 15px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 40px; /* Increased margin for more space */
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Add shadow to the option */
+            border: 1px solid #333; /* Dark border for the option */
+        }
+        .option h3 {
+            font-size: 24px;
+            color: #00c7ff; /* Cyan text color for the option header */
+            font-style: italic;
+            text-shadow: 0 0 10px rgba(0, 199, 255, 0.8); /* Text shadow for a futuristic effect */
+        }
+        .option p {
+            font-size: 18px;
+            color: #ffcd00; /* Yellow text color for the option content */
+            margin-top: 10px;
+            text-shadow: 0 0 10px rgba(255, 205, 0, 0.8); /* Text shadow for a futuristic effect */
+        }
+        /* Search Box Styles */
+        .search-box {
+            display: flex;
+            align-items: center;
+            background-color: #333; /* Dark gray background color for the search box */
+            padding: 10px;
+            border-radius: 30px; /* Rounded corners for the search box */
+            margin-top: 20px;
+            width: 100%;
+        }
+        .search-box input[type="text"] {
+            flex-grow: 1;
+            border: none;
+            background: transparent;
+            font-size: 18px;
+            color: #00c7ff; /* Cyan text color for the search box input */
+            outline: none;
+        }
+        .search-box button {
+            background-color: #ffcd00; /* Yellow button background color */
+            border: none;
+            border-radius: 30px; /* Rounded corners for the button */
+            color: #000; /* Black text color for the button */
+            padding: 10px 20px;
+            margin-left: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Smooth hover transition */
+        }
+        /* Button hover effect */
+        .search-box button:hover {
+            background-color: #ffcc00; /* Darker yellow on hover */
+        }
+        /* File Upload Styles */
+        .file-upload {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #333; /* Dark gray background color for the file upload area */
+            padding: 20px;
+            border-radius: 20px;
+            margin-top: 20px;
+            width: 100%;
+            max-width: 600px;
+            border: 2px dashed #00c7ff; /* Cyan dashed border for the file upload area */
+        }
+        .file-upload input[type="file"] {
+            display: none; /* Hide the file input */
+        }
+        .file-upload label {
+            cursor: pointer;
+            font-size: 18px;
+            color: #00c7ff; /* Cyan text color for the label */
+            text-decoration: underline;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">TaxHub</div>
+    <div class="tagline">Tax Intelligence Portal</div>
+
+    <div class="container">
+        <!-- Option 1: Prepare Taxes -->
+        <div class="option">
+            <h3>Prepare My Taxes</h3>
+            <p>Get started with your tax preparation.</p>
+            <!-- Search Box for Option 1 -->
+            <div class="search-box">
+                <input type="text" placeholder="Enter your question...">
+                <button>Search</button>
+            </div>
+        </div>
+
+        <!-- Option 2: Ask Tax Question & Upload Documents -->
+        <div class="option">
+            <h3>Ask a Tax Question About My Documents</h3>
+            <p>Upload your tax documents and ask your questions.</p>
+            <!-- Search Box for Option 2 -->
+            <div class="search-box">
+                <input type="text" placeholder="Enter your question...">
+                <button>Search</button>
+            </div>
+            <!-- File Upload for Option 2 -->
+            <div class="file-upload">
+                <input type="file" id="upload" accept=".pdf, .docx, .jpg, .png">
+                <label for="upload">Upload Your Documents</label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
