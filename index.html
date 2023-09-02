@@ -1,10 +1,48 @@
-<html>
-    <body>
-        <h1> 
-
-            Taxhub
-    
-        </h1>
-
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaxHub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #3498db; /* Background color changed to a blue color */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 48px;
+            color: #ecf0f1; /* Text color changed to a light gray color */
+        }
+        input[type="file"] {
+            padding: 10px;
+            margin-top: 20px;
+        }
+        /* Button style */
+        button {
+            padding: 10px 20px;
+            background-color: #e74c3c; /* Button color changed to a red color */
+            border: none;
+            color: #fff; /* Button text color changed to white */
+            cursor: pointer;
+        }
+        /* Button hover effect */
+        button:hover {
+            background-color: #c0392b; /* Darker red on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>TaxHub</h1>
+    <form enctype="multipart/form-data" action="/upload" method="POST">
+        <input type="file" name="file" id="fileInput">
+        <button type="submit">Upload</button>
+    </form>
+</body>
 </html>
